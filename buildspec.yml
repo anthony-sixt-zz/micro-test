@@ -1,0 +1,11 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - /bin/bash gradlew build
+#      - /bin/bash gradlew buildDocker
+artifacts:
+  files:
+    - build/distributions/micro-test-*.zip
+  discard-paths: yes
